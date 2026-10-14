@@ -1,0 +1,13 @@
+# Illustrative configuration only. No parser/runtime is provided.
+pipeline:
+  name: adaptive-response
+  mode: design-only
+  stages:
+    - signal_router
+    - context_weave
+    - inference_mesh
+    - reflection_loop
+  policies:
+    routing: task-aware
+    context_budget: dynamic
+    trace_level: structured
