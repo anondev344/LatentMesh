@@ -7,6 +7,8 @@ pipeline:
     - context_weave
     - inference_mesh
     - reflection_loop
+    - inference_cordinator
+    - variable4
   policies:
     routing: task-aware
     context_budget: dynamic
